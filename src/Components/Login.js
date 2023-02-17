@@ -1,5 +1,6 @@
 import React from "react";
 import { FaHome } from "react-icons/fa";
+import { Link } from "react-router-dom";
 
 const Login = () => {
   return (
@@ -15,9 +16,9 @@ const Login = () => {
         >
           <div className="row">
             <div className="col-10" style={{ margin: "2px" }}>
-              <a href="#a">
+              <Link to={"/"}>
                 <FaHome style={{ color: "black", width: "25px" }} />
-              </a>
+              </Link>
               <span> / </span>
               <strong>Đăng nhập - Nhận OTP bởi Zalo</strong>
             </div>
