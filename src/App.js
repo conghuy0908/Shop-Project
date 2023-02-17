@@ -224,10 +224,9 @@ function App() {
         <Route path="/login" element={<Login/>}/>
       </Routes>
       <div className="row">
-        <div className="col-12 bg-black" style={{height:"170px"}}>
+        <div className="col-12 bg-black" style={{height:"210px"}}>
         <div className="row mt-2 text-center">
-          <div className="col-4"></div>
-          <div className="col-4">
+          <div className="col-12">
                 <Link to={"/"}>
                   <img
                     src="https://res.yame.vn/Content/images/yame-f-logo-white.png"
@@ -240,7 +239,9 @@ function App() {
                     <p >Than phiền/Góp ý</p>
                   </Link>
           </div>
-          <div className="col-4"></div> 
+          <div className="col-12 mt-1">
+            <p style={{color:"white"}}>CopyRight@ by Nguyen Cong Huy </p>
+          </div>
         </div>
         </div>
       </div>
