@@ -9,6 +9,7 @@ import {
 import {Routes,Route,Link} from "react-router-dom"
 import Home from "./Components/Home";
 import Login from "./Components/Login";
+import Cart from "./Components/Cart";
 
 function App() {
   return (
@@ -200,7 +201,7 @@ function App() {
                           </Link>
                         </li>
                         <li className="menu-control">
-                          <a href="#a">
+                          <Link to={"/cart"}>
                             <AiTwotoneShopping
                               style={{
                                 color: "white",
@@ -208,7 +209,7 @@ function App() {
                                 height: "25px",
                               }}
                             />
-                          </a>
+                          </Link>
                         </li>
                       </ul>
                     </div>
@@ -224,6 +225,7 @@ function App() {
         <Routes>
         <Route path="/" element={<Home/>}/>
         <Route path="/login" element={<Login/>}/>
+        <Route path="/cart" element={<Cart/>}/>
         </Routes>
         </div>
       </div>
